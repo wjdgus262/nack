@@ -1,0 +1,99 @@
+*{ margin: 0 0; text-decoration: none; list-style: none; font-family:  '나눔스퀘어라운드'; color: inherit;}
+body,html,.border{ min-width: 1024px;}
+#img { width: 200px; height: 75px;    }
+.border{width: 1024px; height: 1100px; /*border: 3px solid #ef7904;*/ margin: 0 auto; border-top: none; }
+
+
+#header{width: 100%;height: 100px;}
+.wrap{width: 1024px;margin: 0 auto;}
+#header_body{height: inherit;}
+#login{margin-top: 0;margin-bottom: -10px;height: 1px;}
+.header_login{width: 120px;float: right;margin-right:  10px;}
+.header_img{margin: 0;width: 200px;height: 75px;float: left;margin-top: -20px;}
+.header_menu{width: 770px;height: 50px;margin-left: 250px;margin-top: 50px;}
+.header_menu > ul > li
+{
+	float: left;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 180px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: 1px solid gray;
+	color: black;
+}
+.header_menu > ul > li:nth-child(1){border-left: none;}
+.header_menu > ul > li:hover{background-color: #ef7904;color: white;}
+.header_menu > ul > li:hover > a{text-decoration: underline;}
+.header_menu > ul > li >.submenu
+{
+	/*display: block;*/
+	margin: 0 auto;
+	margin-top: 10px;
+	/*background-color: red;*/
+	/*border: 1px solid black;*/
+	font-size: 1em;
+	position: relative;
+	background-color: white;
+	box-shadow: 5px 5px 5px 0px gray;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s ease-in-out;
+	transform: translateY(-20px);
+}
+.header_menu > ul > li:hover > .submenu
+{
+	text-decoration: none;
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+.header_menu > ul > li >.submenu > li
+{
+	height: 30px;
+	font-size: 0.6em;
+	margin: 0;
+	width: 180px;
+	margin-left: -40px;
+	line-height: 30px;
+	color: black;
+	border-bottom: 1px solid gray;
+
+}
+.header_menu > ul > li > .submenu > li:hover{
+	background-color: #008d36;
+	color: white;
+	font-weight: bold;
+
+}
+.header_menu > ul > li > .submenu > li:last-child{border-bottom: none;}
+
+#imgsilde{background-color: blue;height: 500px;overflow: hidden;position: relative;margin-top: -42px;z-index: -1; width: 1024px; margin: 0 auto;}
+#imgsilde > img{width: 1024px;	height: 550px; margin: 0 auto;}
+#quer{position: absolute;left: 25%;top: 10%;width: 200px;height: 200px;}
+#quer > h1{font-size: 5em;font-family: '나눔손글씨 펜';color : black;}
+#quer > p{font-size: 1.2em;font-weight: bold;}
+
+/*.notice { background-color: green; }*/
+.wrap > div > h1 { text-align: center; }
+.notice { /*background-color: red;*/ text-align: center; margin: 0 auto; width: 70%; }
+.content_body { margin-top: 30px; height: 450px; /*background-color: blue;*/ width: 100%; margin-bottom: 30px; }
+#content_main{height: inherit; /*background-color: red;*/ min-width: 1024px; width: 90%; /*overflow: scroll;*/ width: 1024px;}
+.content_iframe{float: left; box-sizing: border-box;}
+.content_iframe:nth-child(1){/*background-color: blue;*/ height: inherit; width: 34%; }
+.iframe {width: 100%;}
+.content_iframe:nth-child(1) > .iframe{margin-top: 67.5px;}
+.content_iframe:nth-child(2){/*background-color: green;*/ height: inherit; width: 28.4%; margin-left: 10px;}
+.content_iframe:nth-child(3){background-color: pink; height: inherit; width: 35.5%; margin-left: 10px;}
+
+footer{color: white; background-color: #ef7904; height: 100px;}
+.footer_wrap{width: 1024px; /*background-color: blue;*/ margin: 0 auto; height: inherit;}
+.footer_main{float: left; margin-top: 30px; margin-left: 50px;}
+
+.footer_right{float : left; margin-left: 50px; width: 500px; height: inherit;}
+.footer_right > p {float: left; font-size: 1.4em; font-weight: bold; margin-left: 30px; margin-top: 40px;}
